@@ -172,7 +172,7 @@ const Experience: React.FC = () => {
                         <h3 className="font-poppins font-semibold text-xl lg:text-2xl text-foreground mb-2">
                           {experience.title}
                         </h3>
-                        <div className="flex items-center space-x-4 text-muted-foreground">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0 text-muted-foreground">
                           <span className="font-medium text-primary">{experience.company}</span>
                           <span className="flex items-center text-sm">
                             <Calendar className="w-4 h-4 mr-1" />
@@ -184,7 +184,7 @@ const Experience: React.FC = () => {
                           </span>
                         </div>
                       </div>
-                      
+
                       <Button
                         variant="outline"
                         size="sm"
