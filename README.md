@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository.
 This site is a reflection of my work and journey as a **Systems Administrator, Web Developer, and Cybersecurity Analyst**.  
 It serves as a central hub to showcase my experience, projects, and technical skills.  
 
-You can view the live site here: **[Portfolio Website](https://yourdomain.com)**  
+You can view the live site here: **[Portfolio Website](https://linathi-mqalo.vercel.app/)**  
 
 ---
 
