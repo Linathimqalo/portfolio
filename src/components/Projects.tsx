@@ -40,6 +40,17 @@ const Projects: React.FC = () => {
       featured: true
     },
     {
+      id: "luxury-portfolio-app",
+      title: "Luxury Portfolio Web Application",
+      description: "A premium personal portfolio platform with blog, projects, certifications, and customizable themes powered by Supabase and Next.js.",
+      longDescription: "Designed and built a full-stack portfolio platform inspired by Apple, Tesla, and Medium aesthetics. Implemented Supabase backend with authentication, RLS policies, and storage buckets for user-generated content. Delivered CRUD functionality for projects, docs, blog posts, and certifications. Added dark/light modes, customizable color themes, and a sleek premium UI with advanced typography and spacing. The result is a production-ready portfolio app with a modern, elegant user experience.",
+      technologies: ["Next.js", "TypeScript", "Supabase", "TailwindCSS", "ShadCN UI", "Framer Motion"],
+      githubUrl: "https://github.com/Linathimqalo/velvet-ink-forge",
+      liveUrl: "https://aureum-omega.vercel.app/",
+      category: "Full-Stack Development",
+      featured: true
+    },
+    {
       id: "siem-soc-lab",
       title: "SIEM/SOC Lab Environment",
       description: "Complete Security Operations Center laboratory setup with multiple SIEM platforms and security tools.",
@@ -47,7 +58,7 @@ const Projects: React.FC = () => {
       technologies: ["Wazuh", "Splunk", "Security Onion", "TheHive5", "MISP", "Suricata", "Elasticsearch"],
       githubUrl: "#",
       category: "Infrastructure",
-      featured: true
+      featured: false
     },
     {
       id: "sharepoint-migration",
@@ -58,6 +69,17 @@ const Projects: React.FC = () => {
       githubUrl: "#",
       category: "Enterprise",
       featured: false
+    },
+    {
+      id: "personal-finance-app",
+      title: "Personal Finance Management Platform",
+      description: "A full-stack finance app for tracking budgets, transactions, goals, debts, and investments with real-time reporting and insights.",
+      longDescription: "Built a comprehensive personal finance management platform using Supabase and Lovable AI. The application features secure authentication, row-level security policies, and multi-currency support. Users can manage transactions, budgets, financial goals, debts, and investments with full CRUD functionality. Added a dynamic dashboard with real-time insights, interactive reports, and customizable user settings. Integrated investment tracking with live asset pricing APIs and designed a responsive, modern UI with TailwindCSS and glassmorphism effects.",
+      technologies: ["React", "TypeScript", "Supabase", "TailwindCSS", "Lovable", "PostgreSQL", "REST APIs"],
+      githubUrl: "https://github.com/Linathimqalo/lumin-wealth",
+      liveUrl: "https://finora-gold.vercel.app/",
+      category: "Finance",    
+      featured: true
     },
     {
       id: "deloitte-simulation",
@@ -204,6 +226,13 @@ const Projects: React.FC = () => {
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                   </Button>
+                  {project.liveUrl && (
+                        <Button variant="ghost" size="sm" asChild>
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      )}
                 </div>
 
                 {/* Hover Effect */}

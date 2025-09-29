@@ -264,7 +264,222 @@ rule Zeus_Banking_Trojan {
           ]
         }
       ]
-    }
+    },
+    'luxury-portfolio-app': {
+      title: 'Luxury Portfolio + Docs + Blog Web Application',
+      date: 'September 29, 2025',
+      github: 'https://github.com/Linathimqalo/luxury-portfolio-app',
+      live: 'https://aureum-omega.vercel.app/',
+      technologies: [
+        'Next.js',
+        'TypeScript',
+        'Supabase',
+        'TailwindCSS',
+        'ShadCN UI',
+        'Framer Motion'
+      ],
+      sections: [
+        {
+          title: 'Introduction & Purpose',
+          content: `This project delivers a modern, luxury-inspired personal portfolio platform that integrates a blog, project showcase, certifications, and documentation features. The application emphasizes premium aesthetics, responsive design, and full CRUD functionality, built on a Supabase backend with advanced security (RLS policies) and seamless file storage integration.`
+        },
+        {
+          title: 'Backend Architecture',
+          content: [
+            '**Database Schema (Supabase Postgres):**',
+            '- Profiles: user information, theme preferences, custom palettes',
+            '- Projects: project details, media, repo/demo links',
+            '- Project Media: associated media assets',
+            '- Docs: markdown-based documents with public/private visibility',
+            '- Posts: blog entries with slug routing, tags, and publish states',
+            '- Certifications: credential entries with images and verification links',
+            '',
+            '**Storage Buckets:**',
+            '- avatars',
+            '- project_media',
+            '- post_covers',
+            '- certs',
+            '',
+            '**Row Level Security Policies:**',
+            '- Enforced per-user ownership on create, update, and delete',
+            '- Public read for published posts, public docs, and certifications'
+          ]
+        },
+        {
+          title: 'Frontend Design & UX',
+          content: [
+            '**Design Inspirations:** Tesla, Apple, Medium',
+            '**Key Features:**',
+            '- Minimalist, premium design with excellent whitespace',
+            '- Light/Dark mode toggle with customizable accent palettes',
+            '- Modern sans-serif typography with optional serif headings',
+            '- Subtle gold accents (#C7843B, #F3BD68)',
+            '- Floating particles with occasional shooting star effect',
+            '- Smooth animations and hover effects using Framer Motion',
+            '',
+            '**Responsive Layouts:**',
+            '- Optimized for mobile, tablet, and desktop',
+            '- Grid-based card layouts for projects, posts, and certifications'
+          ]
+        },
+        {
+          title: 'Core Functionality',
+          content: [
+            '- **Authentication:** Supabase Auth with email/password (social logins optional)',
+            '- **CRUD Operations:** Fully wired for projects, docs, posts, and certifications',
+            '- **File Uploads:** Supabase storage buckets for avatars, project media, post covers, and certs',
+            '- **Profile & Settings:** Avatar upload, bio, theme switch, accent color picker',
+            '- **Advanced Search:** Full-text search across projects, docs, and posts',
+            '- **Slug Management:** Unique slugs for docs and posts with validation'
+          ]
+        },
+        {
+          title: 'UI Enhancements & Polish',
+          content: [
+            '- Loading, error, and empty states with elegant placeholders',
+            '- Parallax hero banner with animated logo/name',
+            '- Hover states with gold glow and subtle scaling',
+            '- Consistent card sizing and spacing',
+            '- Glass-like panels in dark mode for depth and luxury feel',
+            '- Smooth theme transition animations'
+          ]
+        },
+        {
+          title: 'Performance & Accessibility',
+          content: [
+            '- Lazy-loaded images with Supabase transformations',
+            '- Stale-while-revalidate caching for docs and posts lists',
+            '- Optimized grid rendering for large datasets',
+            '- Keyboard-accessible modals and navigation',
+            '- Proper ARIA attributes for interactive elements'
+          ]
+        },
+        {
+          title: 'Results & Deliverables',
+          content: [
+            '- Production-ready portfolio app scaffold',
+            '- Supabase backend with secure RLS policies',
+            '- Fully functional frontend with premium design',
+            '- CRUD and file uploads tested and verified',
+            '- Advanced search and filtering integrated',
+            '- Theme customization and particles toggle implemented'
+          ]
+        },
+        {
+          title: 'Future Enhancements (Phase 2)',
+          content: [
+            '- Team/collaborator roles with shared editing',
+            '- Paid subscription tiers for advanced features',
+            '- Analytics dashboard for post and project engagement',
+            '- AI-assisted writing for docs and blog',
+            '- PDF export and social sharing integrations'
+          ]
+        }
+      ]
+    },
+    'personal-finance-app': {
+      title: 'Personal Finance Management Web Application',
+      date: 'September 29, 2025',
+      github: 'https://github.com/Linathimqalo/lumin-wealth',
+      live: 'https://finora-gold.vercel.app/',
+      technologies: [
+        'React',
+        'TypeScript',
+        'TailwindCSS',
+        'Framer Motion',
+        'PostgreSQL'
+      ],
+      sections: [
+        {
+          title: 'Introduction & Purpose',
+          content: `A full-stack personal finance application designed to help users manage budgets, track transactions, set financial goals, monitor debts, and analyze investments. The app emphasizes real-time insights, multi-currency support, and a premium, glassmorphism-inspired UI to make financial tracking both practical and elegant.`
+        },
+        {
+          title: 'Backend Architecture',
+          content: [
+            '**Database Schema (Supabase Postgres):**',
+            '- Transactions: income/expenses with categorization',
+            '- Budgets: spending limits by category and period',
+            '- Goals: savings and progress tracking',
+            '- Investments: assets with live pricing integration',
+            '- Debts: liabilities with payoff tracking',
+            '- Recurring Transactions: automated income/expense entries',
+            '- User Profiles: preferred currency, theme, and settings',
+            '',
+            '**Row Level Security Policies:**',
+            '- Enforced per-user ownership on create, update, and delete',
+            '- Full CRUD operations scoped by user_id for all tables'
+          ]
+        },
+        {
+          title: 'Frontend Design & UX',
+          content: [
+            '**Design Inspirations:** Luxury dashboards, fintech apps',
+            '**Key Features:**',
+            '- Dashboard with live charts, net worth, income/expenses',
+            '- Sidebar navigation with collapsible mode',
+            '- Dark/Light theme toggle',
+            '- Multi-currency conversion system with user preferences',
+            '- Glassmorphism and gold-accent styling',
+            '',
+            '**Responsive Layouts:**',
+            '- Optimized for desktop and mobile with card-based views',
+            '- Interactive charts for trends and breakdowns'
+          ]
+        },
+        {
+          title: 'Core Functionality',
+          content: [
+            '- **Authentication:** Supabase Auth with email/password',
+            '- **Transactions:** Full CRUD, CSV import/export, filtering, and categorization',
+            '- **Budgets:** Create, update, delete, and monitor category-based limits',
+            '- **Goals:** Track progress towards financial targets with editable milestones',
+            '- **Investments:** Track assets with live API integration for pricing',
+            '- **Reports:** Generate summaries and visual breakdowns of spending/income',
+            '- **Settings:** User profile management, currency selection, theme toggle'
+          ]
+        },
+        {
+          title: 'UI Enhancements & Polish',
+          content: [
+            '- Consistent currency formatting using CurrencyAmount component',
+            '- Hover/animation states powered by Framer Motion',
+            '- Elegant placeholders for empty states',
+            '- Visual progress indicators for goals and budgets',
+            '- Error handling for API (CORS fallback, null safety checks)'
+          ]
+        },
+        {
+          title: 'Performance & Accessibility',
+          content: [
+            '- Real-time syncing with Supabase subscriptions',
+            '- Lazy-loaded charts and tables for performance',
+            '- Mobile-first design tested on multiple devices',
+            '- Proper ARIA attributes for form inputs and modals'
+          ]
+        },
+        {
+          title: 'Results & Deliverables',
+          content: [
+            '- Production-ready finance app scaffold',
+            '- Functional Supabase backend with secure RLS',
+            '- CRUD and CSV import/export verified',
+            '- Currency system integrated across app',
+            '- Fully responsive premium UI implemented'
+          ]
+        },
+        {
+          title: 'Future Enhancements (Phase 2)',
+          content: [
+            '- Collaboration features for shared household accounts',
+            '- Subscription tiers for premium analytics',
+            '- AI-driven financial recommendations',
+            '- PDF/Excel export for reports',
+            '- Notifications and reminders for recurring transactions'
+          ]
+        }
+      ]
+    }        
   };
 
   const project = projectData[id || ''];
